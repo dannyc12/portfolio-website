@@ -1,12 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4 column-width">
-            <app-project-card [project]="project"></app-project-card>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 column-width">
-            <app-project-card [project]="project"></app-project-card>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4 column-width">
+        <div *ngFor="let project of projects" class="col-lg-4 col-md-6 mb-4 column-width">
             <app-project-card [project]="project"></app-project-card>
         </div>
     </div>
