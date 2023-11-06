@@ -4,8 +4,8 @@
         <div class="col-lg shadow border m-1">
             <div class="text-center">
                 <h2>About Me</h2>
-                <img src="../../assets/profile.jpeg" alt="profile picture" height="256" class="rounded-circle">
-                <p>This is some stuff about me...
+                <img src={{avatarUrl}} alt="profile picture" height="256" class="rounded-circle">
+                <p>{{bio}}
                     </p>
             </div>
         </div>
@@ -15,14 +15,16 @@
                 <h2>Featured Project</h2>
                 <h4>{{ featureProject.name }}</h4>
             </div>
-            
+
             <carousel>
                 <div *ngFor="let picture of featureProject.pictures">
                     <slide><img class="slide" src={{picture}} alt={{featureProject.name}}></slide>
                 </div>
             </carousel>
-            <p class="mt-2">{{featureProject.summary}}</p>
-            <p>Visit the portfolio section to learn more</p>
+            <div class="text-center">
+                <p class="mt-2">{{featureProject.summary}}</p>
+                <p>Visit the portfolio section to learn more</p>
+            </div>
         </div>
     </div>
 </div>
