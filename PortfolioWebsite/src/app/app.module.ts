@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -14,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ModalModule }from 'ngx-bootstrap/modal';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +27,13 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     PortfolioComponent,
     ResumeComponent,
     ContactComponent,
-    ProjectModalComponent
+    ProjectModalComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     ModalModule.forRoot(),
     CarouselModule.forRoot()
