@@ -13,27 +13,27 @@ export class ProjectsService {
     name: 'Social Media API',
     summary: 'Spring Boot API modeling Twitter with 31 CRUD endpoints',
     description: '',
-    projectLink: '',
+    projectLink: 'https://github.com/fasttrackd-student-work/spring-assessment-social-media-sprint-09-2023-assessment-1-team-3',
     tags: [Tag.SPRING, Tag.JAVA, Tag.POSTGRESQL],
-    pictures: []
+    pictures: ["../../assets/projects/social_media_api.png", "../../assets/projects/social_media_api_2.png"]
   },
   {
     id: 1,
     name: 'Coffee and WiFi',
     summary: 'Flask website where users can post Cafes with details',
     description: '',
-    projectLink: '',
+    projectLink: 'https://github.com/dannyc12/Portfolio_Coffee_WiFi_Website_SQL',
     tags: [Tag.PYTHON, Tag.FLASK],
-    pictures: []
+    pictures: ["../../assets/projects/coffee_and_wifi_1.png", "../../assets/projects/coffee_and_wifi.png"]
   },
   {
     id: 2,
     name: 'Breakout',
-    summary: 'Classic Wozniak arcade game built with Python\'s TKInter GUI library',
+    summary: 'Classic Wozniak arcade game built with Python\'s Turtle Graphics library',
     description: '',
-    projectLink: '',
+    projectLink: 'https://github.com/dannyc12/Portfolio_Breakout_Game',
     tags: [Tag.PYTHON],
-    pictures: []
+    pictures: ["../../assets/projects/breakout.png", "../../assets/projects/breakout_2.png"]
   }
 ];
 
