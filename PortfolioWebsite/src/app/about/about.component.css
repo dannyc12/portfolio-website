@@ -1,4 +1,4 @@
-body{margin-top:20px;}
+body{margin-top:10px;}
 /* About Me 
 ---------------------*/
 @media (max-width: 991px) {
@@ -109,7 +109,7 @@ body{margin-top:20px;}
 }
 
 .section {
-    padding: 100px 0;
+    padding: 25px 0;
     position: relative;
 }
 .gray-bg {
@@ -162,6 +162,20 @@ body{margin-top:20px;}
     color: red;
   }
 
+  .fa-github {
+    color: black;
+  }
+
+  .fa-instagram {
+    color: rgb(221, 59, 86);
+  }
+
+  .fa-wordpress {
+    color: grey;
+  }
+
   .profile {
     max-height: 340px;
+    width: auto;
+    border-radius: 100%;
   }

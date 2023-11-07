@@ -1,13 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Project } from '../models/Project';
-import { Tag } from '../models/Tag';
 import { ProjectsService } from '../_services/projects.service';
+import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css']
+  styleUrls: ['./portfolio.component.css'],
+  animations: [
+    trigger('flyInOut', [
+      transition('void => *', [
+        style({transform: 'translateY(100%)'}),
+        animate('500ms')
+      ]),
+      transition('* => void', [
+        animate('1s', style({transform: 'translateY(100%)'}))
+      ])
+    ])
+  ]
 })
 export class PortfolioComponent implements OnInit {
 

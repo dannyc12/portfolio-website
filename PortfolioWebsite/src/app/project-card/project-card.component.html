@@ -1,8 +1,12 @@
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 <div class="card shadow text-center project">
     <div class="card-body">
         <h5 class="card-title">{{ project.name }}</h5>
         <p class="card-text">{{ project.summary }}.</p>
-        <button class="btn btn-primary" (click)="OpenProjectModal()">View More</button>
+            <div class="center-items card-details">
+                <button class="btn btn-primary" (click)="OpenProjectModal()">View More</button>
+                <a class="fa fa-github fa-2x github-icon" href="{{ project.projectLink }}"></a>
+            </div>
     </div>
 
     <div class="card-footer">
