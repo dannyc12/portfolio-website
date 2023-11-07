@@ -7,13 +7,12 @@
     color: black;
 }
 
+.github-icon:hover {
+    transform: scale(1.1);
+}
+
 .card-details {
     display: flex;
     gap: 20px;
 }
 
-.center-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

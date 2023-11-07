@@ -25,3 +25,19 @@
     justify-content: center;
     align-items: center;
 }
+
+.dark-purple {
+    background-color: #27005D;
+}
+
+.light-purple {
+    background-color: #9400FF;
+}
+
+.light-blue {
+    background-color: #AED2FF;
+}
+
+.pale {
+    background-color: #E4F1FF;
+}

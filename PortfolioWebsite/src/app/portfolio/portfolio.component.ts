@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Project } from '../models/Project';
 import { ProjectsService } from '../_services/projects.service';
-import { animate, style, transition, trigger } from '@angular/animations';
+import { animate, style, transition, trigger, keyframes } from '@angular/animations';
 
 @Component({
   selector: 'app-portfolio',
@@ -12,10 +12,11 @@ import { animate, style, transition, trigger } from '@angular/animations';
     trigger('flyInOut', [
       transition('void => *', [
         style({transform: 'translateY(100%)'}),
-        animate('500ms')
-      ]),
-      transition('* => void', [
-        animate('1s', style({transform: 'translateY(100%)'}))
+        animate('500ms', keyframes([
+            style({opacity: 0, transform: 'translateY(100%)', offset: 0}),
+            style({opacity: .2, transform: 'translateY(50%)', offset: .5}),
+            style({opacity: 1, transform: 'translateY(0)', offset: 1.0}),
+        ]))
       ])
     ])
   ]

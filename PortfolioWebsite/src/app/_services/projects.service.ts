@@ -20,7 +20,7 @@ export class ProjectsService {
   {
     id: 1,
     name: 'Coffee and WiFi',
-    summary: 'Flask website where users can post Cafes with details',
+    summary: 'Flask website where users can post cafes with details',
     description: '',
     projectLink: 'https://github.com/dannyc12/Portfolio_Coffee_WiFi_Website_SQL',
     tags: [Tag.PYTHON, Tag.FLASK],
