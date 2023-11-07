@@ -10,6 +10,7 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 })
 export class ContactComponent {
 
+  showMsg: boolean;
   formData: FormGroup;
 
   // This sets the title of the site in each the browser tab
@@ -23,6 +24,7 @@ export class ContactComponent {
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text);
         console.log('result: ' + JSON.stringify(result));
+        this.showMsg = true;
       }, (error) => {
         console.log(error.text);
       });
@@ -35,9 +37,4 @@ export class ContactComponent {
       message: new FormControl('', [Validators.required])
     })
   }
-
-  // submitForm() {
-  //   // grab all the fields and their values
-  //   alert(`Name: ${this.name}, email: ${this.email}, message: ${this.message}`)
-  // }
 }
