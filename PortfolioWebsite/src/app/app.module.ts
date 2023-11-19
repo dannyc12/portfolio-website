@@ -18,6 +18,8 @@ import { ModalModule }from 'ngx-bootstrap/modal';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { AboutComponent } from './about/about.component';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { AboutComponent } from './about/about.component';
     HttpClientModule,
     BrowserAnimationsModule,
     ModalModule.forRoot(),
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    AccordionModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
